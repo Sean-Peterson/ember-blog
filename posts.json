@@ -1,0 +1,14 @@
+{ "posts": [{
+    "author": "Brynna",
+    "title": "Why I love Eagles",
+    "body": "Something",
+    "image": "http://i676.photobucket.com/albums/vv130/enriquemadera/bald-eagle-IMG_3102mwcopycopy.jpg",
+    "date": "4:00"
+  }, {
+    "author": "Sean",
+    "title": "'Merica",
+    "body": "'The only person to ever smoke me under the table was Willie Nelson' - Snoop Dogg",
+    "image": "https://images.vice.com/noisey/content-images/article/willie-nelson-weed-jimmy-carters-son/more-busch-gardens-photos-tampa-fla.jpg?crop=1xw:0.769921875xh;center,center&resize=525",
+    "date": "4:01"
+  }]
+}
