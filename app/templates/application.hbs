@@ -1,7 +1,7 @@
 <div class="container-fluid navbar">
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
-      <li><a href="contact">contact</a></li>
+      <li>{{#link-to 'new-post'}}Add new post{{/link-to}}</li>
       <li><a href="about">about</a></li>
     </ul>
   </div>
@@ -9,7 +9,7 @@
 <div class= "container">
   {{#link-to "index"}}
   <header class= "jumbotron">
-    <h1>Blog</h1>
+    <h1 id="title">Eagles</h1>
   </header>
   {{/link-to}}
     {{outlet}}
