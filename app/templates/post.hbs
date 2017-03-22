@@ -1,0 +1,8 @@
+<h1>{{model.title}}<br></h1>
+<h4>By: {{model.author}}</h4>
+<p>{{model.date}}<br></p>
+<img src="{{model.image}}">
+<p>{{model.body}}</p>
+<br>
+{{update-post post=model update="update"}}
+<button {{action 'destroyPost' model}}>Delete Post</button>
