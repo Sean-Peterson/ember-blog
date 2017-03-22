@@ -1,8 +1,17 @@
+<div class="posts">
 <h1>{{model.title}}<br></h1>
 <h4>By: {{model.author}}</h4>
 <p>{{model.date}}<br></p>
 <img src="{{model.image}}">
 <p>{{model.body}}</p>
 <br>
+<h2> Reviews </h2>
+<ul>
+  {{#each model.comments as |comment|}}
+  {{comment-tile comment=comment}}
+  {{/each}}
+</ul>
 {{update-post post=model update="update"}}
+{{new-comment saveComment="saveComment" post=model}}
 <button {{action 'destroyPost' model}}>Delete Post</button>
+</div>

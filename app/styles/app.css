@@ -2,6 +2,21 @@
   text-align: center;
 }
 
+.posts {
+  text-align: center;
+}
+
+.posts img {
+  width: 400px;
+}
+
+.truncate {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;;
+}
+
 #title {
   color: red;
 }
