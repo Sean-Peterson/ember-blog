@@ -50,3 +50,40 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+## Planning
+
+1. Configuration/dependencies
+  * Bootstrap: package.json
+  * jQuery: package.json
+  * All other other dependencies are installed by Ember and located in package.json
+
+2. Specs
+  * Spec 1: User can create and save a new blog post
+  * Spec 2: User can edit and delete blog posts
+  * Spec 3: User can navigate to individual posts
+  * Spec 4: User can add comments to post
+  * Spec 5: User can edit and delete comments
+
+3. Integration
+  * Initial routes or index pages with all dependencies in Controller/index.html head
+  * Template/html page for `index`
+  * Template/html page for `about`
+  * Template/html page for `contact`
+  * Template/html page for `new-post`
+  * Template/html page for `post`
+  * Display all posts on index with `post-tile` component
+  * Display individual post content with `post-detail` component
+  * Display update post form with `update-post` component
+  * Display comments with `comment-tile` component
+  * Display new comment form with `new-comment` component
+  * Display update post form with `update-comment` component
+
+4. UX/UI
+  * Include and modify bootstrap/materialize/Sass etc.
+  * Develop custom style
+
+5. Polish Sausage
+  * Refactor minor portion of...
+  * Delete unused...
+  * Make README awesome
