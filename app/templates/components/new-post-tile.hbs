@@ -3,12 +3,12 @@
   <div>
     <form>
       <div class="form-group">
-        <label for="author">Author</label>
+        <label for="author">Author</label><br>
         {{input value=author id="author"}}
       </div>
 
       <div class="form-group">
-        <label for="title">Title</label>
+        <label for="title">Title</label><br>
         {{input value=title id="title"}}
       </div>
 
@@ -22,6 +22,6 @@
         {{input value=image id="image"}}
       </div>
 
-      <button {{action 'savePost1'}}>Save</button>
+      <button class="btn" {{action 'savePost1'}}>Save</button>
     </form>
   </div>

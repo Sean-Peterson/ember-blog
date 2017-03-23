@@ -1,13 +1,11 @@
-<div class="posts">
-<hr>
+<div class="post">
 {{#link-to 'post' post.id}}
-  <h1>{{post.title}}<br></h1>
+  <h1>{{post.title}}</h1>
 {{/link-to}}
   <h4>By: {{post.author}}</h4>
-  <p>{{post.date}}<br></p>
+  <p>{{post.date}}</p>
   <a href="{{post.image}}">
   <img src="{{post.image}}">
   </a>
   <p class="truncate">{{post.body}}</p>
-  <hr>
 </div>

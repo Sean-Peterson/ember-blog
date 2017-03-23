@@ -1,5 +1,5 @@
 <div class="container-fluid navbar">
-  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <div class="collapse navbar-collapse" id="navbar">
     <ul class="nav navbar-nav">
       <li>{{#link-to 'new-post'}}Add new post{{/link-to}}</li>
       <li><a href="about">About</a></li>
@@ -7,15 +7,15 @@
     </ul>
   </div>
 </div>
-<div class= "container">
+
+<div class= "application-container container">
   {{#link-to "index"}}
-  <header class= "jumbotron">
-    <h1 id="title">Eagles</h1>
-  </header>
+    <header class= "header">
+      <h1 id="application-h1">Eagles</h1>
+    </header>
   {{/link-to}}
     {{outlet}}
   <footer id=footer>
-    <hr>
     <p>©Sean Peterson and Brynna Klamkin-McCarter</p>
   </footer>
 </div>

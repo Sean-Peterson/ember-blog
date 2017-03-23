@@ -6,12 +6,12 @@
 <p>{{model.body}}</p>
 <br>
 <h2> Reviews </h2>
-<ul>
+<div class="comment-div">
   {{#each model.comments as |comment|}}
   {{comment-tile comment=comment}}
   {{/each}}
-</ul>
+</div>
 {{update-post post=model update="update"}}
 {{new-comment saveComment="saveComment" post=model}}
-<button {{action 'destroyPost' model}}>Delete Post</button>
+<button class="btn" {{action 'destroyPost' model}}>Delete Post</button>
 </div>
