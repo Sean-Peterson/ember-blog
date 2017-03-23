@@ -1,4 +1,32 @@
   <p>by {{comment.author}} {{comment.rating}}</p>
   <p>{{comment.content}}</p>
-
+  <p>
+    {{comment.id}}
+  </p>
 <button class="btn" {{action 'delete' comment}}>Delete Comment</button>
+
+{{#if updateCommentForm}}
+  <h4>Update {{comment.author}}'s comment</h4>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input value=author id="author" placeholder=comment.author}}
+      </div>
+
+      <div class="form-group">
+        <label for="rating">Rating</label>
+        {{input value=rating id="rating" placeholder=comment.rating}}
+      </div>
+
+      <div class="form-group">
+        <label for="content">Content</label>
+        {{input value=content id="content" placeholder=comment.content}}
+      </div>
+
+      <button class="btn" {{action 'updateComment' comment}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button class="btn" {{action 'updateCommentForm'}}>Update Comment</button>
+{{/if}}
